@@ -16,12 +16,20 @@
 </script>
 <body>
     <h2>The confirm() method</h2>
+    <p>Click the button to display a confirm box.</p>
     <button onclick="myFunction()">Try it</button>
-<script>
-function myFunction() {
-  confirm("Press a button!");
-}
-</script>
+    <p id="demo"></p>
+    <script>
+        function myFunction() {
+          let text;
+          if (confirm("Press a button!") == true) {
+            text = "You pressed OK!";
+          } else {
+            text = "You canceled!";
+          }
+          document.getElementById("demo").innerHTML = text;
+        }
+        </script>
 
 <h3>JavaScript Validation</h3>
 <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">

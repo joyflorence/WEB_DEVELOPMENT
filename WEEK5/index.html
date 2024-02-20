@@ -3,26 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript</title>
+    <title>Javascript</title>
     <script src="script.js"></script>
-</head>
-<body>
-    <h1>JavaScript Functions</h1>
-<h2>The Arrow Function</h2>
-
-<p>This example shows the syntax of an Arrow Function, and how to use it.</p>
-
-<p id="demo"></p>
 <script>
-    let hello = "";
-
-hello = () => {
-  return "Hello World!";
+    function validateForm() {
+    let x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+      alert("Name must be filled out");
+      return false;
+    }
+  } 
+</script>
+<body>
+    <h2>The confirm() method</h2>
+    <button onclick="myFunction()">Try it</button>
+<script>
+function myFunction() {
+  confirm("Press a button!");
 }
-
-document.getElementById("demo").innerHTML = hello(); 
 </script>
 
+<h3>JavaScript Validation</h3>
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  Name: <input type="text" name="fname">
+  <input type="submit" value="Submit">
+</form>
 
 </body>
 </html>

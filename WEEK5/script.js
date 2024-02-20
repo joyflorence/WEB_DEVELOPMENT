@@ -54,3 +54,12 @@ console.log(te)
 let myFunction = (a, b) => a * b;
 console.log(myFunction(4,5))
 
+
+// validation
+function validateForm() {
+    let x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+      alert("Name must be filled out");
+      return false;
+    }
+  } 

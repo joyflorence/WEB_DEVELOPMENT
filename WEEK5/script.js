@@ -1,15 +1,18 @@
 {console.log("Hello world!")
 
-// Variables undeclared
-x = 5;
-y = 6;
-z = x + y;
-console.log(z)
 
-//variables using var
-var x = 67;     //  use 'var' if you MUST support old browsers.
+
+// Variables undeclared
+k = 5;
+l = 6;
+z
+r = k + l;
+console.log(z)
+// integers have 4bits
+//variables using var(initialisation)
+var a = 67;     //  use 'var' if you MUST support old browsers.
 var y = 6;
-var z = x + y;
+var z = a + y;
 console.log(z)
 // varables declared using let
 let m = 6;

@@ -1,24 +1,25 @@
-function myFunction() {
-    try { 
-        if(x == "") throw "is empty";
-        if(isNaN(x)) throw "is not a number";
-        x = Number(x);
-        if(x > 10) throw "is too high";
-        if(x < 5) throw "is too low";
+function grade(score){
+    try{
+       
+    if(score<0){
+        throw new Error('Score cannot be less than zero');
+    }if(score>100){
+        throw new Error('Score cannot be greater than 100');
     }
-    catch(error) {
-       return 'error: ' + error.message;
-    }
+    if (score>=90){
+        return 'A';
+    }else if(score>=80){
+        return 'B';
+    }else if(score>=70){
+        return 'C';
+    }else if(score>=60){
+        return 'D';
+    }else{
+        return 'F';
+    }  
+} catch(error){
+    return 'error ' + error.message;
 }
+}
+console.log(grade(90));
 
-function myFunction(hour){
-    let time = eval(hour)
-    if (time < 12){
-        greeting = 'Good morning'
-        return greeting
-    } else {
-        greeting = 'good evening'
-        return greeting
-    }
-}
-console.log(myFunction(17))

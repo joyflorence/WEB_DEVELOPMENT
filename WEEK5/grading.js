@@ -24,4 +24,5 @@ function calculateGrade(score) {
 
 // Test the calculateGrade function with various scores
 console.log(calculateGrade('abc'));
+console.log(calculateGrade('90'));
 

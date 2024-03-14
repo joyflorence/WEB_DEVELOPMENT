@@ -1,12 +1,12 @@
-.App {
-  text-align: center;
-  background-color: rgb(47, 131, 103);
-  border-radius: 20%;
-  margin: 34px;
-  max-width: 30%;
-  padding: 1px;
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
+li{
+  display: block;
+}
 
 
 
